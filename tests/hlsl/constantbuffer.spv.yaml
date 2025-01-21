@@ -1,4 +1,4 @@
-%YAML 1.0
+%YAML 1.1
 ---
 all_type_descriptions:
   - &td0
@@ -569,6 +569,7 @@ all_block_variables:
       vector: { component_count: 3 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td0
@@ -584,6 +585,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td1
@@ -599,6 +601,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td2
@@ -614,6 +617,7 @@ all_block_variables:
       vector: { component_count: 3 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td3
@@ -629,6 +633,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td4
@@ -644,6 +649,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td5
@@ -659,6 +665,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td6
@@ -674,6 +681,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td7
@@ -689,6 +697,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td8
@@ -704,6 +713,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td9
@@ -719,6 +729,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 6
     members:
       - *bv4
@@ -740,6 +751,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td11
@@ -755,6 +767,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 1, dims: [8,], stride: 64 }
+    flags: 0x00000001 # UNUSED 
     member_count: 3
     members:
       - *bv3
@@ -773,6 +786,7 @@ all_block_variables:
       vector: { component_count: 3 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 1, dims: [8,], stride: 16 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td13
@@ -788,6 +802,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 1, dims: [8,], stride: 16 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td14
@@ -803,6 +818,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td15
@@ -818,6 +834,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 1, dims: [10,], stride: 784 }
+    flags: 0x00000001 # UNUSED 
     member_count: 4
     members:
       - *bv12
@@ -837,6 +854,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 3, dims: [2,2,3,], stride: 7872 }
+    flags: 0x00000001 # UNUSED 
     member_count: 4
     members:
       - *bv0
@@ -856,6 +874,7 @@ all_block_variables:
       vector: { component_count: 4 }
       matrix: { column_count: 4, row_count: 4, stride: 16 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td18
@@ -871,6 +890,7 @@ all_block_variables:
       vector: { component_count: 4 }
       matrix: { column_count: 4, row_count: 4, stride: 16 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td19
@@ -886,6 +906,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 0
     members:
     type_description: *td20
@@ -901,6 +922,7 @@ all_block_variables:
       vector: { component_count: 3 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td21
@@ -916,6 +938,7 @@ all_block_variables:
       vector: { component_count: 2 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 1, dims: [12,], stride: 16 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td22
@@ -931,6 +954,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td23
@@ -946,6 +970,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 7
     members:
       - *bv17
@@ -963,6 +988,7 @@ all_descriptor_bindings:
     binding: 0
     input_attachment_index: 0
     set: 0
+    decoration_flags: 0x00000000 # NONE
     descriptor_type: 6 # VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER
     resource_type: 2 # CBV
     image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
@@ -996,7 +1022,7 @@ all_interface_variables:
     spirv_id: 0
     name: 
     location: 0
-    storage_class: 0 # UniformConstant
+    storage_class: 3 # Output
     semantic: 
     decoration_flags: 0x00000010 # BUILT_IN 
     built_in: 0 # Position
@@ -1007,14 +1033,14 @@ all_interface_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    format: 0 # VK_FORMAT_UNDEFINED
+    format: 109 # VK_FORMAT_R32G32B32A32_SFLOAT
     type_description: *td26
     word_offset: { location: 0 }
   - &iv2
     spirv_id: 0
     name: 
     location: 0
-    storage_class: 0 # UniformConstant
+    storage_class: 3 # Output
     semantic: 
     decoration_flags: 0x00000010 # BUILT_IN 
     built_in: 1 # PointSize
@@ -1025,14 +1051,14 @@ all_interface_variables:
     array: { dims_count: 0, dims: [], stride: 0 }
     member_count: 0
     members:
-    format: 0 # VK_FORMAT_UNDEFINED
+    format: 100 # VK_FORMAT_R32_SFLOAT
     type_description: *td27
     word_offset: { location: 0 }
   - &iv3
     spirv_id: 0
     name: 
     location: 0
-    storage_class: 0 # UniformConstant
+    storage_class: 3 # Output
     semantic: 
     decoration_flags: 0x00000010 # BUILT_IN 
     built_in: 3 # ClipDistance
@@ -1043,14 +1069,14 @@ all_interface_variables:
     array: { dims_count: 1, dims: [1,], stride: 0 }
     member_count: 0
     members:
-    format: 0 # VK_FORMAT_UNDEFINED
+    format: 100 # VK_FORMAT_R32_SFLOAT
     type_description: *td28
     word_offset: { location: 0 }
   - &iv4
     spirv_id: 0
     name: 
     location: 0
-    storage_class: 0 # UniformConstant
+    storage_class: 3 # Output
     semantic: 
     decoration_flags: 0x00000010 # BUILT_IN 
     built_in: 4 # CullDistance
@@ -1061,7 +1087,7 @@ all_interface_variables:
     array: { dims_count: 1, dims: [1,], stride: 0 }
     member_count: 0
     members:
-    format: 0 # VK_FORMAT_UNDEFINED
+    format: 100 # VK_FORMAT_R32_SFLOAT
     type_description: *td29
     word_offset: { location: 0 }
   - &iv5
@@ -1071,7 +1097,7 @@ all_interface_variables:
     storage_class: 3 # Output
     semantic: 
     decoration_flags: 0x00000011 # BUILT_IN BLOCK 
-    built_in: -1 # ??? (-1)
+    built_in: 0, 1, 3, 4 # [Position, PointSize, ClipDistance, CullDistance]
     numeric:
       scalar: { width: 0, signedness: 0 }
       vector: { component_count: 0 }
@@ -1111,4 +1137,6 @@ module:
     - *iv5 # "gl_PerVertexOut"
   push_constant_count: 0,
   push_constants:
+  specialization_constant_count: 0,
+  specialization_constants:
 ...

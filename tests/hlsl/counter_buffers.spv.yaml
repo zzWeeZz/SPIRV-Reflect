@@ -1,4 +1,4 @@
-%YAML 1.0
+%YAML 1.1
 ---
 all_type_descriptions:
   - &td0
@@ -208,6 +208,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 0
     members:
     type_description: *td0
@@ -223,6 +224,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 1
     members:
       - *bv0
@@ -239,6 +241,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 0
     members:
     type_description: *td0
@@ -254,6 +257,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 1
     members:
       - *bv2
@@ -270,6 +274,7 @@ all_block_variables:
       vector: { component_count: 4 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td2
@@ -285,6 +290,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td3
@@ -300,6 +306,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 2
     members:
       - *bv4
@@ -317,6 +324,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 1
     members:
       - *bv6
@@ -333,6 +341,7 @@ all_block_variables:
       vector: { component_count: 4 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td6
@@ -348,6 +357,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000001 # UNUSED 
     member_count: 0
     members:
     type_description: *td7
@@ -363,6 +373,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 2
     members:
       - *bv8
@@ -380,6 +391,7 @@ all_block_variables:
       vector: { component_count: 0 }
       matrix: { column_count: 0, row_count: 0, stride: 0 }
     array: { dims_count: 0, dims: [], stride: 0 }
+    flags: 0x00000000 # NONE
     member_count: 1
     members:
       - *bv10
@@ -391,6 +403,7 @@ all_descriptor_bindings:
     binding: 0
     input_attachment_index: 0
     set: 2
+    decoration_flags: 0x00000000 # NONE
     descriptor_type: 7 # VK_DESCRIPTOR_TYPE_STORAGE_BUFFER
     resource_type: 8 # UAV
     image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
@@ -407,6 +420,7 @@ all_descriptor_bindings:
     binding: 1
     input_attachment_index: 0
     set: 2
+    decoration_flags: 0x00000000 # NONE
     descriptor_type: 7 # VK_DESCRIPTOR_TYPE_STORAGE_BUFFER
     resource_type: 8 # UAV
     image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
@@ -423,6 +437,7 @@ all_descriptor_bindings:
     binding: 3
     input_attachment_index: 0
     set: 2
+    decoration_flags: 0x00000000 # NONE
     descriptor_type: 7 # VK_DESCRIPTOR_TYPE_STORAGE_BUFFER
     resource_type: 8 # UAV
     image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
@@ -439,6 +454,7 @@ all_descriptor_bindings:
     binding: 4
     input_attachment_index: 0
     set: 2
+    decoration_flags: 0x00000000 # NONE
     descriptor_type: 7 # VK_DESCRIPTOR_TYPE_STORAGE_BUFFER
     resource_type: 8 # UAV
     image: { dim: 0, depth: 0, arrayed: 0, ms: 0, sampled: 0, image_format: 0 } # dim=1D image_format=Unknown
@@ -517,4 +533,6 @@ module:
     - *iv1 # "out.var.SV_TARGET0"
   push_constant_count: 0,
   push_constants:
+  specialization_constant_count: 0,
+  specialization_constants:
 ...

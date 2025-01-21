@@ -1,6 +1,7 @@
+#include <cassert>
+
 #include "common.h"
 #include "sample_spv.h"
-#include <cassert>
 
 #if defined(SPIRV_REFLECT_HAS_VULKAN_H)
 #include <vulkan/vulkan.h>
@@ -11,8 +12,7 @@ struct DescriptorSetLayoutData {
 };
 #endif
 
-int main(int argn, char** argv)
-{
+int main(int argn, char** argv) {
   SpvReflectShaderModule module = {};
   SpvReflectResult result = spvReflectCreateShaderModule(sizeof(k_sample_spv), k_sample_spv, &module);
   assert(result == SPV_REFLECT_RESULT_SUCCESS);
@@ -49,29 +49,32 @@ int main(int argn, char** argv)
     layout.create_info.bindingCount = refl_set.binding_count;
     layout.create_info.pBindings = layout.bindings.data();
   }
-  // Nothing further is done with set_layouts in this sample; in a real application
-  // they would be merged with similar structures from other shader stages and/or pipelines
-  // to create a VkPipelineLayout.
+  // Nothing further is done with set_layouts in this sample; in a real
+  // application they would be merged with similar structures from other shader
+  // stages and/or pipelines to create a VkPipelineLayout.
 #endif
 
   // Log the descriptor set contents to stdout
-  const char* t  = "  ";
+  const char* t = "  ";
   const char* tt = "    ";
 
   PrintModuleInfo(std::cout, module);
   std::cout << "\n\n";
 
-  std::cout << "Descriptor sets:" << "\n";
+  std::cout << "Descriptor sets:"
+            << "\n";
   for (size_t index = 0; index < sets.size(); ++index) {
     auto p_set = sets[index];
 
-    // descriptor sets can also be retrieved directly from the module, by set index
+    // descriptor sets can also be retrieved directly from the module, by set
+    // index
     auto p_set2 = spvReflectGetDescriptorSet(&module, p_set->set, &result);
     assert(result == SPV_REFLECT_RESULT_SUCCESS);
     assert(p_set == p_set2);
     (void)p_set2;
 
-    std::cout << t << index << ":" << "\n";
+    std::cout << t << index << ":"
+              << "\n";
     PrintDescriptorSet(std::cout, *p_set, tt);
     std::cout << "\n\n";
   }
